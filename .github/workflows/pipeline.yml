@@ -23,7 +23,6 @@ jobs:
       run: echo "Hello $NAME1 and $NAME2!"
 
     - name: Show Java Version 1
-      run: echo "Using Java version ${{ env.JAVA_VERSION }} an $NAME1 and $NAME2!"
       env:
         JUST_NAME: "Just a name"
       run: echo "Using Java version ${{ env.JAVA_VERSION }} and $JUST_NAME!"
