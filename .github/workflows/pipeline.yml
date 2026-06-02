@@ -22,8 +22,16 @@ jobs:
     - name: Greet
       run: echo "Hello $NAME1 and $NAME2!"
 
-    - name: Show Java Version
+    - name: Show Java Version 1
       run: echo "Using Java version ${{ env.JAVA_VERSION }} an $NAME1 and $NAME2!"
+      env:
+        JUST_NAME: "Just a name"
+      run: echo "Using Java version ${{ env.JAVA_VERSION }} and $JUST_NAME!"
+
+    - name: Show Java Version 2
+      run: echo "Using Java version ${{ env.JAVA_VERSION }} an $NAME1 and $NAME2!"
+      run: echo "Using Java version ${{ env.JAVA_VERSION }} and $JUST_NAME!"
+
 
     - name: Set up JDK '${{ env.JAVA_VERSION }}'
       uses: actions/setup-java@v3
