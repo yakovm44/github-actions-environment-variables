@@ -31,7 +31,7 @@ jobs:
       run: | 
         echo "Using Java version ${{ env.JAVA_VERSION }} an $NAME1 and $NAME2!"
         echo "Using Java version ${{ env.JAVA_VERSION }} and $JUST_NAME!"
-        echo "Using RUNNER_OS ${{ env.RUNNER_OS }} "
+        echo "Using RUNNER_OS ${{ RUNNER_OS }} "
 
 
     - name: Set up JDK '${{ env.JAVA_VERSION }}'
