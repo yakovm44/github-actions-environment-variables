@@ -33,6 +33,10 @@ jobs:
         echo "Using Java version ${{ env.JAVA_VERSION }} and $JUST_NAME!"
         echo "Using RUNNER_OS ${{ runner.os }} "
 
+    - name: Show Java Version 3
+      run: secret1 = ${{ secrets.SECRET1 }}
+
+
 
     - name: Set up JDK '${{ env.JAVA_VERSION }}'
       uses: actions/setup-java@v3
