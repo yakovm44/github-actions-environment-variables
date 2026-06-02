@@ -22,7 +22,7 @@ jobs:
     - name: Greet
       run: echo "Hello $NAME1 and $NAME2!"
 
-    -name: Show Java Version
+    - name: Show Java Version
       run: echo "Using Java version: $JAVA_VERSION"
 
     - name: Set up JDK '${{ env.JAVA_VERSION }}'
