@@ -23,7 +23,7 @@ jobs:
       run: echo "Hello $NAME1 and $NAME2!"
 
     - name: Show Java Version
-      run: echo "Using Java version: ${{ env.JAVA_VERSION }}"
+      run: echo "Using Java version"
 
     - name: Set up JDK '${{ env.JAVA_VERSION }}'
       uses: actions/setup-java@v3
