@@ -13,10 +13,9 @@ env:
 jobs:
 
   build:
-  env:
-    java-version: 21
     runs-on: ubuntu-latest
-
+    env:
+      JAVA_VERSION: 21
     steps:
     - uses: actions/checkout@v3
 
@@ -25,7 +24,7 @@ jobs:
     - name: Set up JDK 21
       uses: actions/setup-java@v3
       with:
-        java-version: '${{ env.java-version }}'
+        java-version: '${{ env.JAVA_VERSION }}'
         distribution: 'temurin'
         cache: maven
     # - name: Build with Maven
