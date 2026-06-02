@@ -21,7 +21,7 @@ jobs:
 
     - name: Greet
       run: echo "Hello $NAME1 and $NAME2!"
-    - name: Set up JDK 21
+    - name: Set up JDK '${{ env.JAVA_VERSION }}'
       uses: actions/setup-java@v3
       with:
         java-version: '${{ env.JAVA_VERSION }}'
